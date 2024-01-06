@@ -112,7 +112,37 @@ td, th{
     overflow: hidden; /* İçeriğin kenarlardan taşmasını önlemek için */
 }
 
-/* Mehmet csss aşapıda  */
+/* ÜYE OL CSS */
+/* ÜYE OL CSS */
+/* ÜYE OL CSS */
+/* ÜYE OL CSS */
+
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+
+/* Mehmet css ana sayfa eklemeler aşağıda  */
+/* Mehmet css ana sayfa eklemeler aşağıda  */
+/* Mehmet css ana sayfa eklemeler aşağıda  */
+/* Mehmet css ana sayfa eklemeler aşağıda  */
+
 .txt-color-white{
     color: white;
 }
@@ -156,7 +186,7 @@ td, th{
 }
 
 .background-img{
-            background-image: url('{% static "img/pexels-pixabay-46798.jpg"%}') center/cover no-repeat;
+            background: url('/pexels-pixabay-46798.jpg') center/cover no-repeat;
             height: 80vh; /* Sayfa yüksekliğine göre ayarlayabilirsiniz */
             color: white; /* Yazı rengi */
             text-align: center;
@@ -164,6 +194,7 @@ td, th{
             flex-direction: column;
             justify-content: center;
             position: relative;
+            
 }
 
 .background-overlay {

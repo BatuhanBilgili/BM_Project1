@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpRequest
 # modelleri çekmek için ekleme yapıyoruz
-from .models import Team, Match
+from .models import *
 
 def index(request):
 	# maç ile alakalı verileri çekmek için
@@ -14,4 +14,5 @@ def about(request):
 def uyeol(request):
 	return render(request, "pages/uye-ol.html")
 
-
+def girisyap(request):
+	return render(request, "pages/giris-yap.html")
