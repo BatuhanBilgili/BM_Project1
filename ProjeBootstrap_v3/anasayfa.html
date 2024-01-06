@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Maçkolik</title>
+</head>
+<body>
+            <!--Aşağıda mobile uyarlanabilir navbar oluşturuldu. Yani ekran daralsa bile ona uygun bir icon çıkarak kayan menü hazırlandı-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a href="anasayfa.html" class="navbar-brand">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mobile" class="collapse navbar-collapse">               
+          
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="anasayfa.html" class="nav-link">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iletisim.html" class="nav-link">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="uye-ol.html" class="nav-link">Üye Ol</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="giris-yap.html" class="nav-link">Giriş Yap</a>
+                  </li>
+                </ul>
+                <form class="d-flex">           
+                    <input type="text" class="form-control me-1" placeholder="Arama">
+                    <button class="btn btn-warning">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>                
+                </form>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid background-img">
+      <div class="background-overlay">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Bu Site Sizin İçin Yapay Zekayı Kullanarak Maç Tahminlerini Öğrenmenizi Sağlar.</h1>
+          <br>
+          <h5>Şimdi Üye Ol</h5>
+          <br>
+          <a href="/uye-ol.html"><button type="button" class="btn btn-warning">Üye Ol</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<div class="container-fluid my-3">
+<div class="row">
+  <div class="col-md-6">
+    <div class="row bg-secondary mx-1 py-1 rounded-pill">
+      <div class="col-8 ps-5">
+        <h5>Premiere League</h5>
+        <p>Sıralama</p>
+      </div>
+      <div class="col-4">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle mt-3 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Ligler
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">La Liga</a></li>
+            <li><a class="dropdown-item" href="#">PTT</a></li>
+            <li><a class="dropdown-item" href="#">Diğer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <table class="table table-hover mt-3">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Takım</th>
+          <th scope="col">O</th>
+          <th scope="col">G</th>
+          <th scope="col">B</th>
+          <th scope="col">Y</th>
+          <th scope="col">PUAN</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Arsenal</td>
+          <td>18</td>
+          <td>12</td>
+          <td>4</td>
+          <td>2</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Liverpool</td>
+          <td>18</td>
+          <td>11</td>
+          <td>6</td>
+          <td>1</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Aston Villa</td>
+          <td>18</td>
+          <td>2</td>
+          <td>3</td>
+          <td>3</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Tottenham Hotspur</td>
+          <td>18</td>
+          <td>12</td>
+          <td>3</td>
+          <td>4</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Manchester City</td>
+          <td>18</td>
+          <td>12</td>
+          <td>4</td>
+          <td>2</td>
+          <td>40</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  
+  <div class="col-md-6 ">
+    <div class="row bg-success mx-1 pt-2 pb-3 rounded-pill">
+      <div class="col-sm-12">
+        <h1 class="text-center">Maç Haftası 19</h1>
+      </div>
+    </div>
+    <table class="table table-hover table-rounded mt-3">
+      <thead class="bg-light">
+        <tr>
+          <th scope="col">Durum</th>
+          <th scope="col">Ev Sahibi</th>
+          <th scope="col">Skor</th>
+          <th scope="col">Deplasman</th>
+          <th scope="col">Dakika</th>
+        </tr>
+      </thead>
+      <tbody class="bg-info">
+        <tr>
+          <th id="status-positive" scope="row">CANLI</th>
+          <td>Galatasaray</td>
+          <td>2 - 4</td>
+          <td>Beşiktaş</td>
+          <td>80"</td>
+        </tr>
+        <tr>
+          <th id="status-negative" scope="row"> BAŞLAMADI</th>
+          <td>Galatasaray</td>
+          <td>2 - 4</td>
+          <td>Beşiktaş</td>
+          <td>80"</td>
+        </tr>
+        <tr>
+          <th id="status-positive" scope="row">CANLI</th>
+          <td>Galatasaray</td>
+          <td>2 - 4</td>
+          <td>Beşiktaş</td>
+          <td>80"</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+</div>
+
+    
+    
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <span>All Rights Reserved © 2024</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
