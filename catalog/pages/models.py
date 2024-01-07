@@ -4,7 +4,7 @@ from django.db import models
 class Team(models.Model):
 	name = models.CharField(max_length=50)
 
-
+	
 # maç ile ilgili bilgileri içersen class
 class Match(models.Model):
 	home_team = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='home_matches')

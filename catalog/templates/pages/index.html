@@ -1,144 +1,143 @@
 {% extends 'layout.html' %}
 {%load static%}
 {% block content %}
-<!--Aşağıda mobile uyarlanabilir navbar oluşturuldu. Yani ekran daralsabile ona uygun bir icon çıkarak kayan menü hazırlandı-->
-<nav class="navbar navbar-expand-md navbar-dark">
-	<div class="container">
-		<a href="index.html" class="navbar-brand">
-			<i class="fa-solid fa-house"></i>
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div id="mobile" class="collapse navbar-collapse">
-
-			<ul class="navbar-nav me-auto">
-				<li class="nav-item">
-					<a href="index.html" class="nav-link">Anasayfa</a>
-				</li>
-				<li class="nav-item">
-					<a href="iletisim.html" class="nav-link">İletişim</a>
-				</li>
-				<li class="nav-item">
-					<a href="uye-ol.html" class="nav-link">Üye Ol</a>
-				</li>
-					<li class="nav-item">
-			  		<a href="giris-yap.html" class="nav-link">Giriş Yap</a>
-		  		</li>
-			</ul>
-			<form class="d-flex">
-				<input type="text" class="form-control me-1" placeholder="Arama">
-				<button class="btn btn-warning">
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</button>
-			</form>
-
-		</div>
-
-	</div>
-</nav>
-
-<div class="container-fluid background-img">
-	<div class="background-overlay">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1>Bu Site Sizin İçin Yapay Zekayı Kullanarak Maç Tahminlerini Öğrenmenizi Sağlar.</h1>
-				<br>
-				<h5>Şimdi Üye Ol</h5>
-				<br>
-				<a href="/uye-ol.html"><button type="button" class="btn btn-warning">Üye Ol</button>
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container-fluid my-3">
-	<div class="row">
-		<div class="col-md-6">
-			<div class="row bg-secondary mx-1 py-1 rounded-pill">
-				<div class="col-8 ps-5">
-					<h5>Premiere League</h5>
-					<p>Standigs</p>
-				</div>
-				<div class="col-4">
-					<div class="dropdown">
-						<button class="btn btn-secondary dropdown-toggle mt-3 " type="button" id="dropdownMenuButton1"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Leagues
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-							<li><a class="dropdown-item" href="#">La Liga</a></li>
-							<li><a class="dropdown-item" href="#">PTT</a></li>
-							<li><a class="dropdown-item" href="#">Diğer</a></li>
+            <!--Aşağıda mobile uyarlanabilir navbar oluşturuldu. Yani ekran daralsa bile ona uygun bir icon çıkarak kayan menü hazırlandı-->
+			<nav class="navbar navbar-expand-md navbar-dark">
+				<div class="container">
+					<a href="/" class="navbar-brand">
+						<i class="fa-solid fa-house"></i>
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div id="mobile" class="collapse navbar-collapse">               
+				  
+						<ul class="navbar-nav me-auto">
+							<li class="nav-item">
+								<a href="/" class="nav-link">Anasayfa</a>
+							</li>
+							<li class="nav-item">
+								<a href="iletisim.html" class="nav-link">İletişim</a>
+							</li>
+							<li class="nav-item">
+								<a href="uye-ol.html" class="nav-link">Üye Ol</a>
+							</li>
+							<li class="nav-item">
+							  <a href="giris-yap.html" class="nav-link">Giriş Yap</a>
+						  </li>
 						</ul>
+						<form class="d-flex">           
+							<input type="text" class="form-control me-1" placeholder="Arama">
+							<button class="btn btn-warning">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>                
+						</form>
+		
 					</div>
+		
 				</div>
+			</nav>
+		
+			<div style="background-image: url(' {% static 'img/picture1.jpg' %} ')" class="container-fluid background-img">
+			  <div class="background-overlay">
+			  <div class="row">
+				<div class="col-sm-12">
+				  <h1>Bu Site Sizin İçin Yapay Zekayı Kullanarak Maç Tahminlerini Öğrenmenizi Sağlar.</h1>
+				  <br>
+				  <h5>Şimdi Üye Ol</h5>
+				  <br>
+				  <a href="/uye-ol.html"><button type="button" class="btn btn-warning">Üye Ol</button>
+				  </a>
+				</div>
+			  </div>
+			</div>
+			</div>
+		
+		<div class="container-fluid my-3">
+		<div class="row">
+		  <div class="col-md-6">
+			<div class="row bg-secondary mx-1 py-1 rounded-pill">
+			  <div class="col-8 ps-5">
+				<h5>Premiere League</h5>
+				<p>Sıralama</p>
+			  </div>
+			  <div class="col-4">
+				<div class="dropdown">
+				  <button class="btn btn-secondary dropdown-toggle mt-3 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					Ligler
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#">La Liga</a></li>
+					<li><a class="dropdown-item" href="#">PTT</a></li>
+					<li><a class="dropdown-item" href="#">Diğer</a></li>
+				  </ul>
+				</div>
+			  </div>
 			</div>
 			<table class="table table-hover mt-3">
-				<thead>
-					<tr>
-						<th scope="col">#</th>
-						<th scope="col">Team</th>
-						<th scope="col">P</th>
-						<th scope="col">W</th>
-						<th scope="col">D</th>
-						<th scope="col">L</th>
-						<th scope="col">PTS</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">1</th>
-						<td>Arsenal</td>
-						<td>18</td>
-						<td>12</td>
-						<td>4</td>
-						<td>2</td>
-						<td>40</td>
-					</tr>
-					<tr>
-						<th scope="row">2</th>
-						<td>Liverpool</td>
-						<td>18</td>
-						<td>11</td>
-						<td>6</td>
-						<td>1</td>
-						<td>39</td>
-					</tr>
-					<tr>
-						<th scope="row">3</th>
-						<td>Aston Villa</td>
-						<td>18</td>
-						<td>2</td>
-						<td>3</td>
-						<td>3</td>
-						<td>39</td>
-					</tr>
-					<tr>
-						<th scope="row">4</th>
-						<td>Tottenham Hotspur</td>
-						<td>18</td>
-						<td>12</td>
-						<td>3</td>
-						<td>4</td>
-						<td>39</td>
-					</tr>
-					<tr>
-						<th scope="row">5</th>
-						<td>Manchester City</td>
-						<td>18</td>
-						<td>12</td>
-						<td>4</td>
-						<td>2</td>
-						<td>40</td>
-					</tr>
-				</tbody>
+			  <thead>
+				<tr>
+				  <th scope="col">#</th>
+				  <th scope="col">Takım</th>
+				  <th scope="col">O</th>
+				  <th scope="col">G</th>
+				  <th scope="col">B</th>
+				  <th scope="col">Y</th>
+				  <th scope="col">PUAN</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th scope="row">1</th>
+				  <td>Arsenal</td>
+				  <td>18</td>
+				  <td>12</td>
+				  <td>4</td>
+				  <td>2</td>
+				  <td>40</td>
+				</tr>
+				<tr>
+				  <th scope="row">2</th>
+				  <td>Liverpool</td>
+				  <td>18</td>
+				  <td>11</td>
+				  <td>6</td>
+				  <td>1</td>
+				  <td>39</td>
+				</tr>
+				<tr>
+				  <th scope="row">3</th>
+				  <td>Aston Villa</td>
+				  <td>18</td>
+				  <td>2</td>
+				  <td>3</td>
+				  <td>3</td>
+				  <td>39</td>
+				</tr>
+				<tr>
+				  <th scope="row">4</th>
+				  <td>Tottenham Hotspur</td>
+				  <td>18</td>
+				  <td>12</td>
+				  <td>3</td>
+				  <td>4</td>
+				  <td>39</td>
+				</tr>
+				<tr>
+				  <th scope="row">5</th>
+				  <td>Manchester City</td>
+				  <td>18</td>
+				  <td>12</td>
+				  <td>4</td>
+				  <td>2</td>
+				  <td>40</td>
+				</tr>
+			  </tbody>
 			</table>
-		</div>
-
-
-		<div class="col-md-6 ">
+		  </div>
+		  
+		  
+		  <div class="col-md-6">
 			<div class="row bg-success mx-1 pt-2 pb-3 rounded-pill">
 				<div class="col-sm-12">
 					<h1 class="text-center">Maç Haftası 19</h1>
@@ -147,67 +146,38 @@
 			<table class="table table-hover table-rounded mt-3">
 				<thead class="bg-light">
 					<tr>
-						<th scope="col">Status</th>
-						<th scope="col">Home</th>
-						<th scope="col">Form</th>
-						<th scope="col">Score</th>
-						<th scope="col">Form</th>
-						<th scope="col">Away</th>
-						<th scope="col">Odds</th>
-						<th scope="col"></th>
+						<th scope="col">Durum</th>
+						<th scope="col">Ev Sahibi</th>
+						<th scope="col">Skor</th>
+						<th scope="col">Deplasman</th>
+						<th scope="col">Dakika</th>
 					</tr>
 				</thead>
 				<tbody class="bg-info">
+					{% for match in matches %}
 					<tr>
-						<th id="status-positive" scope="row">Live</th>
-						<td>Hatayspor</td>
-						<td>1.71</td>
-						<td>2- 4 <br> 80"</td>
-						<td>1.25</td>
-						<td>Beşiktaş</td>
-						<td>3.55</td>
-						<td>2.07</td>
+						<th {% if match.status == "CANLI" %}id="status-positive"{% else %}id="status-negative"{% endif %} scope="row">{{ match.status }}</th>
+						<td>{{ match.home_team.name }}</td>
+						<td>{{ match.score }}</td>
+						<td>{{ match.away_team.name }}</td>
+						<td>{{ match.match_date|date:"H:i" }}</td>
 					</tr>
-					<tr>
-						<th id="status-negative" scope="row"> Didn't Start</th>
-						<td>Hatayspor</td>
-						<td>1.71</td>
-						<td>2- 4 <br> 80"</td>
-						<td>1.25</td>
-						<td>Beşiktaş</td>
-						<td>3.55</td>
-						<td>2.07</td>
-					</tr>
-					<tr>
-						<th id="status-positive" scope="row">Live</th>
-						<td>Hatayspor</td>
-						<td>1.71</td>
-						<td>2- 4 <br> 80"</td>
-						<td>1.25</td>
-						<td>Beşiktaş</td>
-						<td>3.55</td>
-						<td>2.07</td>
-					</tr>
+					{% endfor %}
 				</tbody>
 			</table>
 		</div>
-
-
-	</div>
-</div>
-
-
-
-<footer class="py-4 bg-dark text-white">
-	<div class="container text-center">
-		<span>All Rights Reserved © 2024</span>
-	</div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-	crossorigin="anonymous"></script>
-
-
-
+		
+		
+		</div>
+		</div>
+		
+			
+			
+			<footer class="py-4 bg-dark text-white">
+				<div class="container text-center">
+					<span>All Rights Reserved © 2024</span>
+				</div>
+			</footer>
+		
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 {% endblock %}
