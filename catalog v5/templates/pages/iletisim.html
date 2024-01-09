@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="container contact-form">
+	<div class="contact-image">
+		<img src="https://image.ibb.co/kUagtU/rocket_contact.png"  alt="rocket_contact"/>
+	</div>
+	<form method="post">
+		<h3>Bizimle iletişime geçin..</h3>
+	   <div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<input type="text" name="txtName" class="form-control" placeholder="İsminiz.." value="" />
+				</div>
+				<div class="form-group">
+					<input type="text" name="txtEmail" class="form-control" placeholder="Email adresiniz.." value="" />
+				</div>
+				<div class="form-group">
+					<input type="text" name="txtPhone" class="form-control" placeholder="Telefon Numaranız.." value="" />
+				</div>
+				<div class="form-group">
+					<input type="submit" name="btnSubmit" class="btnContact" value="Mesaj Gönder" />
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<textarea name="txtMsg" class="form-control" placeholder="Mesajınız.." style="width: 100%; height: 150px;"></textarea>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{% endblock %}
